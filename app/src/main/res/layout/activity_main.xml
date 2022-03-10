@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/myLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:columnCount="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/roll_no" />
+
+        <EditText
+            android:id="@+id/editRollno"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/marks" />
+
+        <EditText
+            android:id="@+id/editMarks"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:text="@string/add" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:text="@string/delete" />
+
+        <Button
+            android:id="@+id/btnModify"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:text="@string/modify" />
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:text="@string/view" />
+
+        <Button
+            android:id="@+id/btnViewAll"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:text="@string/view_all" />
+
+        <Button
+            android:id="@+id/btnShowInfo"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:text="@string/show_info" />
+    </androidx.gridlayout.widget.GridLayout>
+
+
+</LinearLayout>
